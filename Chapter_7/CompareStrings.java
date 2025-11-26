@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 public class CompareStrings {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter your name > ");
-        String input = sc.nextLine();
+        String userInput = input.nextLine();
 
         String predefined = "Carmen";
 
-        if (input.equals(predefined)) {
-            System.out.println("Carmen equals " + input);
-        } else {
-            System.out.println("Carmen does not equal " + input);
+        if (predefined.equals(userInput)) {
+            System.out.println(predefined + " equals " + userInput);
+        } else { 
+            System.out.println(predefined + " does not equal " + userInput);
         }
+
     }
 }
