@@ -18,11 +18,11 @@ public class ForexExchangeSystem {
             System.out.println();
         }
         System.out.println("===================== FOREX SUMMARY (Nov 1 – Nov 5) ======================");
-        System.out.println("Currency | Nov1  Nov2  Nov3  Nov4  Nov5  Peak   Lowest");
+        System.out.println("Currency | Nov1  Nov2  Nov3  Nov4  Nov5   Peak  Lowest");
         System.out.println("--------------------------------------------------------------------------");
 
         for (int i = 0; i < currencies.length; i++) {
-            System.out.print(currencies[i] + "    | ");
+            System.out.print(currencies[i] + "      | ");
 
             double peak = rates[i][0];
             double low = rates[i][0];
